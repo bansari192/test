@@ -134,7 +134,7 @@
 
   <main class="card">
     <!-- ANIMAL WITH HEART -->
-    <svg class="art" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
+    <svg id="animal" class="art" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="fur" x1="0" x2="1">
           <stop offset="0" stop-color="#f7c7a1"/>
@@ -171,7 +171,7 @@
             fill="#ff7aa2"/>
     </svg>
 
-    <h1>Kuldeep will you be my valentine?</h1>
+    <h1 id="question">Kuldeep will you be my valentine?</h1>
 
     <section class="button-zone" id="zone">
       <button id="yesBtn">Yes</button>
@@ -182,14 +182,17 @@
     <div class="hint" id="hint">“No” seems a bit shy 😈</div>
 
     <section class="result" id="result">
-      <h2>YAY! 🎉</h2>
+      <h2>💗 YAY! 💗</h2>
+	<h2>Best Decision Ever😘</h2>
       <img
         class="fireworks"
-        src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif"
+        src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzduaGJubmp1anVubG1teXVpa3hxMHRpZnRzbmplOTZsb2ZjOWZuMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zQLjk9d31jlMQ/giphy.gif"
         alt="Fireworks"
       />
+	<h2>I love you 💕</h2>
     </section>
-  </main>
+</main>
+  
 
   <script>
     const zone = document.getElementById("zone");
@@ -290,7 +293,11 @@
     noBtn.addEventListener("click", e => e.preventDefault());
 
     /* ---------- YES CLICK ---------- */
+const question = document.getElementById("question");
+
     yesBtn.addEventListener("click", () => {
+	question.style.display = "none";   // 👈 HIDE HEADER
+	animal.style.display = "none";     // hide animal
       zone.style.display = "none";
       hint.style.display = "none";     // HIDE THE HINT
       result.style.display = "block";

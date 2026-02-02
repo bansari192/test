@@ -7,8 +7,14 @@
 
   <!-- Confetti library -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
 
   <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
     :root {
       --bg1: #ffd6e7;
       --bg2: #ffeef6;
@@ -25,7 +31,7 @@
       display: grid;
       place-items: center;
       background: radial-gradient(circle at top, var(--bg2), var(--bg1));
-      font-family: system-ui, sans-serif;
+      font-family: 'Poppins', Arial, sans-serif;
       overflow: hidden;
       padding: 16px;
     }
@@ -113,6 +119,7 @@
 
     .result h2 {
       font-size: clamp(30px, 4.5vw, 46px);
+	font-weight: 700;
       margin: 10px 0;
     }
 
@@ -183,7 +190,7 @@
 
     <section class="result" id="result">
       <h2>💗 YAY! 💗</h2>
-	<h2>Best Decision Ever😘</h2>
+	
       <img
         class="fireworks"
         src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzduaGJubmp1anVubG1teXVpa3hxMHRpZnRzbmplOTZsb2ZjOWZuMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zQLjk9d31jlMQ/giphy.gif"
